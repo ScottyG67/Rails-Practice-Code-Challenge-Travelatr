@@ -1,0 +1,21 @@
+<h1>Bloggers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Blogger Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bloggers.each do |blogger| %>
+      <tr>
+        <td><%= link_to blogger.name, blogger_path(blogger) %></td>
+       
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

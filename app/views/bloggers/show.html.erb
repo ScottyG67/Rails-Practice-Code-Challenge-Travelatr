@@ -1,0 +1,8 @@
+<h1><%=@blogger.name%></h1>
+<h2>Welcome To My Blog!!</h2>
+
+<h5>Age: <%=@blogger.age.to_s%></h5>
+<h5>Bio: </h5><p><%=@blogger.bio.to_s%></p>
+
+<h5> Featured Blog Post: <%=link_to @featured_post.title, post_path(@featured_post)%></h5>
+<h1> Total Number of Likes: <%=@number_of_likes%></h1>
